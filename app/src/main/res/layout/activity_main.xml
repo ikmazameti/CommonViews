@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="#DEEAFB"
-    android:gravity="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+
+        tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
@@ -30,7 +37,7 @@
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The first App for Programmers"
+        android:text="The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn The first App for Programmers. The home for all native doctors to learn "
         android:textSize="24sp"
         tools:context=".MainActivity" />
 
@@ -108,7 +115,20 @@
 
     </RadioGroup>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/loginMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+</ScrollView>
+
 
 
 
